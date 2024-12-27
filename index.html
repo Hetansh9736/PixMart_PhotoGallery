@@ -1,60 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PixMart-PhotoGallary</title>
-    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/output.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-    <nav class="p-4 md:p-6 bg-white dark:bg-gray-800 shadow-md">
-        <div class="container mx-auto flex flex-wrap items-center justify-between">
-            <div class="w-1/2 md:w-1/4 lg:w-1/5 text-left">
-                <a href="#"
-                    class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 dark:from-orange-500 dark:to-orange-300">
-                    PixMart
-                </a>
-            </div>
-         <!-- Search start here -->
-            <div class="w-full order-last md:order-2 md:w-1/2 lg:w-2/5 mt-4 md:mt-0">
-                <div
-                    class="h-[50px]  pr-1 flex items-center rounded-full border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus-within:ring-2 focus-within:ring-orange-500 dark:focus-within:ring-orange-400 transition-all duration-300">
-                    <input class="text-sm bg-transparent w-full ml-4 h-8 outline-none" type="text" placeholder="Search for high-quality photos..."
-                        class="w-full px-4 py-2 rounded-full focus:outline-none bg-transparent text-gray-700 dark:text-gray-300">
-                    <button
-                        class="bg-orange-500 hover:bg-orange-600 dark:bg-orange-400 dark:hover:bg-orange-500 text-white font-semibold px-4 py-2 rounded-full transition-all duration-300">
-                        Search
+  <body class=  " bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <nav class="p-4 z-10 md:p-6 bg-white dark:bg-gray-800 shadow-md">
+      <div
+        class="container mx-auto flex flex-wrap items-center justify-between"
+      >
+        <div class="w-1/2 md:w-1/4 lg:w-1/5 text-left">
+          <a
+            href="#"
+            class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 dark:from-orange-500 dark:to-orange-300"
+          >
+            PixMart
+          </a>
+        </div>
+        <!-- Search start here -->
+        <div
+          class="w-full order-last md:order-2 md:w-1/2 lg:w-2/5 mt-4 md:mt-0"
+        >
+          <div
+            class="h-[50px] pr-1 flex items-center rounded-full border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus-within:ring-2 focus-within:ring-orange-500 dark:focus-within:ring-orange-400 transition-all duration-300"
+          >
+            <input
+              class="text-sm bg-transparent w-full ml-4 h-8 outline-none"
+              type="text"
+              placeholder="Search for high-quality photos..."
+              class="w-full px-4 py-2 rounded-full focus:outline-none bg-transparent text-gray-700 dark:text-gray-300"
+            />
+            <button
+              class="bg-orange-500 hover:bg-orange-600 dark:bg-orange-400 dark:hover:bg-orange-500 text-white font-semibold px-4 py-2 rounded-full transition-all duration-300"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="w-1/2 order-2 md:order-last md:w-1/4 lg:w-1/5 flex justify-end items-center space-x-4"
+        >
+          <button
+            class="px-4 py-2 border rounded-full font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 dark:focus:ring-offset-gray-800 dark:focus:ring-orange-400 transition-all duration-300"
+          >
+            Log&nbsp;in
+          </button>
+          <button
+            class="px-4 py-2 rounded-full font-medium text-white bg-gray-800 dark:bg-white dark:text-gray-900 hover:bg-gray-900 dark:hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 dark:focus:ring-offset-gray-800 dark:focus:ring-orange-400 transition-all duration-300"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+
+    <!-- main starts hear -->
+
+    <div class="hero w-full h-[100vh] border-t ">
+        <div class="asid h-full w-1/6 bg-white z-0 md:w-[100px] flex justify-between flex-col shadow-md border-r dark:border-gray-300  dark:bg-gray-800">
+            <div class="main flex flex-col w-full items-center *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5">
+                <div class="btn1 ">
+                    <button><svg fill="#000000" width="34px" height="34px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" d="M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M17.9842695,7.39078625 C18.1985588,6.64477525 17.4973604,5.9435768 16.7513494,6.1578661 L16.6494246,6.19284365 L9.57835679,9.02127078 L9.47282273,9.07079854 C9.30957453,9.15937167 9.17428758,9.29167162 9.08209683,9.45256344 L9.02127078,9.57835679 L6.19284365,16.6494246 L6.1578661,16.7513494 C5.9435768,17.4973604 6.64477525,18.1985588 7.39078625,17.9842695 L7.49271102,17.949292 L14.5637788,15.1208648 L14.6693129,15.0713371 C14.8325611,14.982764 14.967848,14.850464 15.0600388,14.6895722 L15.1208648,14.5637788 L17.949292,7.49271102 L17.9842695,7.39078625 Z M12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 Z"></path> </g></svg></button>
+                    <span>Explore</span>
+                </div>
+                <div class="btn2">
+                    <button><svg width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#080808"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M14 5H20" stroke="#b9babb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="0.4" d="M14 8H17" stroke="#b9babb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#b9babb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="0.4" d="M22 22L20 20" stroke="#b9babb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
+                    <span>Search</span>
+                </div>
+                <div class="btn3">
+                   <button>
+                    <svg viewBox="0 0 24 24"  width="34px" height="34px fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" stroke="#b5b5b5" stroke-width="0.696" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 8.98987V20.3499C16 21.7999 14.96 22.4099 13.69 21.7099L9.76001 19.5199C9.34001 19.2899 8.65999 19.2899 8.23999 19.5199L4.31 21.7099C3.04 22.4099 2 21.7999 2 20.3499V8.98987C2 7.27987 3.39999 5.87988 5.10999 5.87988H12.89C14.6 5.87988 16 7.27987 16 8.98987Z" stroke="#b5b5b5" stroke-width="0.696" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" stroke="#b5b5b5" stroke-width="0.696" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                     </button>
+                    <span>Saved</span>
+                </div>
+                <div class="btn4">
+                   <button>
+                    <svg width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.5 21L17.5 15M17.5 15L20 17.5M17.5 15L15 17.5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </button>
+                    <span>Upload</span>
+                </div>
+
+            </div>
+            <div class="setting *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5">
+                <div class="btn">
+                    <button>
+                        <svg viewBox="0 0 24 24" width="54px" height="54px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1395 12.0002C14.1395 13.1048 13.2664 14.0002 12.1895 14.0002C11.1125 14.0002 10.2395 13.1048 10.2395 12.0002C10.2395 10.8957 11.1125 10.0002 12.1895 10.0002C13.2664 10.0002 14.1395 10.8957 14.1395 12.0002Z" stroke="#7e7c7c" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.57381 18.1003L5.12169 12.8133C4.79277 12.2907 4.79277 11.6189 5.12169 11.0963L7.55821 5.89229C7.93118 5.32445 8.55898 4.98876 9.22644 5.00029H12.1895H15.1525C15.8199 4.98876 16.4477 5.32445 16.8207 5.89229L19.2524 11.0923C19.5813 11.6149 19.5813 12.2867 19.2524 12.8093L16.8051 18.1003C16.4324 18.674 15.8002 19.0133 15.1281 19.0003H9.24984C8.5781 19.013 7.94636 18.6737 7.57381 18.1003Z" stroke="#7e7c7c" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </button>
+                    <span>Settings</span>
+                    
                 </div>
             </div>
-
-            <div class="w-1/2 order-2 md:order-last md:w-1/4 lg:w-1/5 flex justify-end items-center space-x-4">
-                <button
-                    class="px-4 py-2 border rounded-full font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 dark:focus:ring-offset-gray-800 dark:focus:ring-orange-400 transition-all duration-300">
-                    Log&nbsp;in
-                </button>
-                <button
-                    class="px-4 py-2 rounded-full font-medium text-white bg-gray-800 dark:bg-white dark:text-gray-900 hover:bg-gray-900 dark:hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 dark:focus:ring-offset-gray-800 dark:focus:ring-orange-400 transition-all duration-300">
-                    Register
-                </button>
-            </div>
         </div>
-    </nav>
+
+    </div>
 
     <script>
-        // You can add JavaScript for dark mode toggling or other interactivity here
+      // You can add JavaScript for dark mode toggling or other interactivity here
     </script>
-</body>
-
+  </body>
 </html>
-
-
-
-
 
 <!-- <div class="theme w-[10%] flex justify-center items-center">
     <button
