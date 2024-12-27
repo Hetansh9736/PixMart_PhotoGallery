@@ -9,101 +9,125 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class=  " bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-    <nav class="p-4 z-10 md:p-6 bg-white dark:bg-gray-800 shadow-md">
-      <div
-        class="container mx-auto flex flex-wrap items-center justify-between"
-      >
+  <body class=  " bg-gray-100  text-gray-900 ">
+   <div class="main-page"> <!-- nav start here! -->
+    <nav class="p-4 z-10 md:p-6 bg-white  shadow-md">
+        <!-- logo start here! -->
+      <div class="logo mx-auto flex flex-wrap items-center justify-between">
         <div class="w-1/2 md:w-1/4 lg:w-1/5 text-left">
-          <a
-            href="#"
-            class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 dark:from-orange-500 dark:to-orange-300"
-          >
-            PixMart
-          </a>
+          <a href="#" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 "> PixMart </a>
         </div>
-        <!-- Search start here -->
-        <div
-          class="w-full order-last md:order-2 md:w-1/2 lg:w-2/5 mt-4 md:mt-0"
-        >
-          <div
-            class="h-[50px] pr-1 flex items-center rounded-full border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 focus-within:ring-2 focus-within:ring-orange-500 dark:focus-within:ring-orange-400 transition-all duration-300"
-          >
-            <input
+        <!-- Search start here! -->
+        <div class="w-full order-last md:order-2 md:w-1/2 lg:w-2/5 mt-4 md:mt-0">
+          <div class="h-[50px] pr-1 flex items-center rounded-full border border-gray-300  bg-gray-100  focus-within:ring-2 focus-within:ring-orange-500 dark:focus-within:ring-orange-400 transition-all duration-300" >
+           <input 
               class="text-sm bg-transparent w-full ml-4 h-8 outline-none"
               type="text"
               placeholder="Search for high-quality photos..."
-              class="w-full px-4 py-2 rounded-full focus:outline-none bg-transparent text-gray-700 dark:text-gray-300"
-            />
-            <button
-              class="bg-orange-500 hover:bg-orange-600 dark:bg-orange-400 dark:hover:bg-orange-500 text-white font-semibold px-4 py-2 rounded-full transition-all duration-300"
-            >
-              Search
-            </button>
+              class="w-full px-4 py-2 rounded-full focus:outline-none bg-transparent text-gray-700 dark:text-gray-300">
+            <button class="bg-orange-500 hover:bg-orange-600  text-white font-semibold px-4 py-2 rounded-full transition-all duration-300"> Search </button>
           </div>
         </div>
-
-        <div
-          class="w-1/2 order-2 md:order-last md:w-1/4 lg:w-1/5 flex justify-end items-center space-x-4"
-        >
-          <button
-            class="px-4 py-2 border rounded-full font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 dark:focus:ring-offset-gray-800 dark:focus:ring-orange-400 transition-all duration-300"
-          >
-            Log&nbsp;in
-          </button>
-          <button
-            class="px-4 py-2 rounded-full font-medium text-white bg-gray-800 dark:bg-white dark:text-gray-900 hover:bg-gray-900 dark:hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 dark:focus:ring-offset-gray-800 dark:focus:ring-orange-400 transition-all duration-300"
-          >
-            Register
-          </button>
+      <!-- Login and Register button starts here! -->
+        <div class="w-1/2 order-2 md:order-last md:w-1/4 lg:w-1/5 flex justify-end items-center space-x-4">
+          <button class="px-4 py-2 border rounded-full font-medium text-gray-700  hover:bg-gray-200  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500  transition-all duration-300 text-[16px]">
+            Log&nbsp;in </button>
+          <button class="px-4 py-2 rounded-full font-medium text-white bg-gray-800  hover:bg-gray-900  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500  transition-all duration-300 text-[16px]"> Register </button>
         </div>
       </div>
     </nav>
     
 
     <!-- main starts hear -->
-
-    <div class="hero w-full h-[100vh] border-t ">
-        <div class="asid h-full w-1/6 bg-white z-0 md:w-[100px] flex justify-between flex-col shadow-md border-r dark:border-gray-300  dark:bg-gray-800">
-            <div class="main flex flex-col w-full items-center *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5">
-                <div class="btn1 ">
-                    <button><svg fill="#000000" width="34px" height="34px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" d="M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M17.9842695,7.39078625 C18.1985588,6.64477525 17.4973604,5.9435768 16.7513494,6.1578661 L16.6494246,6.19284365 L9.57835679,9.02127078 L9.47282273,9.07079854 C9.30957453,9.15937167 9.17428758,9.29167162 9.08209683,9.45256344 L9.02127078,9.57835679 L6.19284365,16.6494246 L6.1578661,16.7513494 C5.9435768,17.4973604 6.64477525,18.1985588 7.39078625,17.9842695 L7.49271102,17.949292 L14.5637788,15.1208648 L14.6693129,15.0713371 C14.8325611,14.982764 14.967848,14.850464 15.0600388,14.6895722 L15.1208648,14.5637788 L17.949292,7.49271102 L17.9842695,7.39078625 Z M12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 Z"></path> </g></svg></button>
-                    <span>Explore</span>
-                </div>
-                <div class="btn2">
-                    <button><svg width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#080808"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M14 5H20" stroke="#b9babb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="0.4" d="M14 8H17" stroke="#b9babb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#b9babb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path opacity="0.4" d="M22 22L20 20" stroke="#b9babb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
-                    <span>Search</span>
-                </div>
-                <div class="btn3">
-                   <button>
-                    <svg viewBox="0 0 24 24"  width="34px" height="34px fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" stroke="#b5b5b5" stroke-width="0.696" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 8.98987V20.3499C16 21.7999 14.96 22.4099 13.69 21.7099L9.76001 19.5199C9.34001 19.2899 8.65999 19.2899 8.23999 19.5199L4.31 21.7099C3.04 22.4099 2 21.7999 2 20.3499V8.98987C2 7.27987 3.39999 5.87988 5.10999 5.87988H12.89C14.6 5.87988 16 7.27987 16 8.98987Z" stroke="#b5b5b5" stroke-width="0.696" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" stroke="#b5b5b5" stroke-width="0.696" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                    </button>
-                    <span>Saved</span>
-                </div>
-                <div class="btn4">
-                   <button>
-                    <svg width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.5 3H12H8C6.34315 3 5 4.34315 5 6V18C5 19.6569 6.34315 21 8 21H12M13.5 3L19 8.625M13.5 3V7.625C13.5 8.17728 13.9477 8.625 14.5 8.625H19M19 8.625V11.8125" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M17.5 21L17.5 15M17.5 15L20 17.5M17.5 15L15 17.5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                    </button>
-                    <span>Upload</span>
-                </div>
-
+    <div class="hero w-full h-[100vh]  border-t">
+        <aside class="h-full w-1/6 bg-white z-0 md:w-[100px] flex justify-between flex-col items-center shadow-md border-r">
+            <div class="container-1 flex flex-col w-full items-center *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5 *:text-[14px]  ">
+               <div class="explore">
+                <button>
+                    <svg class="" fill="#000000" width="34px" height="34px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" d="M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M17.9842695,7.39078625 C18.1985588,6.64477525 17.4973604,5.9435768 16.7513494,6.1578661 L16.6494246,6.19284365 L9.57835679,9.02127078 L9.47282273,9.07079854 C9.30957453,9.15937167 9.17428758,9.29167162 9.08209683,9.45256344 L9.02127078,9.57835679 L6.19284365,16.6494246 L6.1578661,16.7513494 C5.9435768,17.4973604 6.64477525,18.1985588 7.39078625,17.9842695 L7.49271102,17.949292 L14.5637788,15.1208648 L14.6693129,15.0713371 C14.8325611,14.982764 14.967848,14.850464 15.0600388,14.6895722 L15.1208648,14.5637788 L17.949292,7.49271102 L17.9842695,7.39078625 Z M12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 Z"></path> </g></svg>
+                </button>
+                <span class="">Explore</span>
+               </div>
+               <div class="search">
+                <button>
+                    <svg class="" width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier"  stroke="currentColor" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 17c1.71 0 3.287-.573 4.55-1.537l4.743 4.744a1 1 0 0 0 1.414-1.414l-4.744-4.744A7.5 7.5 0 1 0 9.5 17zM15 9.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" fill="#000000"></path></g></svg>
+                </button>
+                <span>Search</span>
+               </div>
+               <div class="save">
+              <button>
+                <svg class="" width="44px" height="44px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 6L7.5 5.25H16.5L17.25 6V19.3162L12 16.2051L6.75 19.3162V6ZM8.25 6.75V16.6838L12 14.4615L15.75 16.6838V6.75H8.25Z" fill="#000000"></path> </g></svg>
+              </button>
+                <span>Saved</span>
+               </div>
+               <div class="upload">
+                <button>
+                    <svg class=" width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.0344 14.0062C13.0361 14.5585 12.5898 15.0076 12.0375 15.0093C11.4853 15.0111 11.0361 14.5647 11.0344 14.0125L13.0344 14.0062Z" fill="#000000"></path> <path d="M9.71867 6.72364L11.0075 5.42672L11.0344 14.0125L13.0344 14.0062L13.0075 5.42045L14.3044 6.70926C14.6961 7.09856 15.3293 7.09659 15.7186 6.70484C16.1079 6.3131 16.1059 5.67993 15.7142 5.29064L11.9955 1.59518L8.30003 5.31387L9.71867 6.72364Z" fill="#000000"></path> <path d="M8.30003 5.31387C7.91073 5.70562 7.9127 6.3388 8.30445 6.7281C8.69619 7.1174 9.32938 7.11539 9.71867 6.72364L8.30003 5.31387Z" fill="#000000"></path> <path d="M4 12C4 10.8954 4.89543 10 6 10C6.55228 10 7 9.55229 7 9C7 8.44772 6.55228 8 6 8C3.79086 8 2 9.79086 2 12V18C2 20.2091 3.79086 22 6 22H17C19.7614 22 22 19.7614 22 17V12C22 9.79086 20.2091 8 18 8C17.4477 8 17 8.44772 17 9C17 9.55229 17.4477 10 18 10C19.1046 10 20 10.8954 20 12V17C20 18.6569 18.6569 20 17 20H6C4.89543 20 4 19.1046 4 18V12Z" fill="#000000"></path> </g></svg>
+                </button>
+                <span>Upload</span>
+               </div>
             </div>
-            <div class="setting *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5">
-                <div class="btn">
+            <div class="container-2 flex flex-col w-full items-center *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5 *:text-[14px]">
+                <div class="setting">
                     <button>
-                        <svg viewBox="0 0 24 24" width="54px" height="54px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1395 12.0002C14.1395 13.1048 13.2664 14.0002 12.1895 14.0002C11.1125 14.0002 10.2395 13.1048 10.2395 12.0002C10.2395 10.8957 11.1125 10.0002 12.1895 10.0002C13.2664 10.0002 14.1395 10.8957 14.1395 12.0002Z" stroke="#7e7c7c" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.57381 18.1003L5.12169 12.8133C4.79277 12.2907 4.79277 11.6189 5.12169 11.0963L7.55821 5.89229C7.93118 5.32445 8.55898 4.98876 9.22644 5.00029H12.1895H15.1525C15.8199 4.98876 16.4477 5.32445 16.8207 5.89229L19.2524 11.0923C19.5813 11.6149 19.5813 12.2867 19.2524 12.8093L16.8051 18.1003C16.4324 18.674 15.8002 19.0133 15.1281 19.0003H9.24984C8.5781 19.013 7.94636 18.6737 7.57381 18.1003Z" stroke="#7e7c7c" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        <svg class="" width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.08168 13.9445C2.55298 12.9941 2.28862 12.5188 2.28862 12C2.28862 11.4812 2.55298 11.0059 3.08169 10.0555L4.43094 7.63L5.85685 5.24876C6.4156 4.31567 6.69498 3.84912 7.14431 3.5897C7.59364 3.33028 8.13737 3.3216 9.22483 3.30426L12 3.26L14.7752 3.30426C15.8626 3.3216 16.4064 3.33028 16.8557 3.5897C17.305 3.84912 17.5844 4.31567 18.1431 5.24876L19.5691 7.63L20.9183 10.0555C21.447 11.0059 21.7114 11.4812 21.7114 12C21.7114 12.5188 21.447 12.9941 20.9183 13.9445L19.5691 16.37L18.1431 18.7512C17.5844 19.6843 17.305 20.1509 16.8557 20.4103C16.4064 20.6697 15.8626 20.6784 14.7752 20.6957L12 20.74L9.22483 20.6957C8.13737 20.6784 7.59364 20.6697 7.14431 20.4103C6.69498 20.1509 6.4156 19.6843 5.85685 18.7512L4.43094 16.37L3.08168 13.9445Z" stroke="#000000" stroke-width="2"></path> <circle cx="12" cy="12" r="3" stroke="#000000" stroke-width="2"></circle> </g></svg>
                     </button>
                     <span>Settings</span>
-                    
                 </div>
             </div>
+        </aside>
+
+    </div></div>
+    <!-- Register page -->
+    <div class="register-page mx-auto  items-center justify-center h-screen absolute top-0  w-[100vw] hidden">
+        <div class="w-96 bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Register</h1>
+        
+        <form>
+        <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+        <input type="email" id="email" name="email" class="border border-gray-400 p-2 rounded w-full" />
         </div>
-
-    </div>
-
-    <script>
-      // You can add JavaScript for dark mode toggling or other interactivity here
-    </script>
+        
+        <div class="mb-4">
+        <label for="username" class="block text-gray-700 font-bold mb-2">Username:</label>
+        <input type="text" id="username" name="username" class="border border-gray-400 p-2 rounded w-full" />
+        </div>
+        
+        <div class="mb-4">
+        <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
+        <input type="password" id="password" name="password" class="border border-gray-400 p-2 rounded w-full" />
+        </div>
+        
+        <div class="mb-4">
+        <label for="confirm_password" class="block text-gray-700 font-bold mb-2">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" class="border border-gray-400 p-2 rounded w-full" />
+        </div>
+        
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Register</button>
+        </form>
+        </div>
+        </div>
+        <!-- Login page -->
+        <div class="login-page mx-auto  items-center justify-center h-screen absolute top-0 w-[100vw] hidden">
+            <div class="w-96 bg-white p-6 rounded-lg shadow-md">
+            <h1 class="text-2xl font-bold mb-4">Login</h1>
+            
+            <form>
+            <div class="mb-4">
+            <label for="username" class="block text-gray-700 font-bold mb-2">Username:</label>
+            <input type="text" id="username" name="username" class="border border-gray-400 p-2 rounded w-full" />
+            </div>
+            
+            <div class="mb-4">
+            <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
+            <input type="password" id="password" name="password" class="border border-gray-400 p-2 rounded w-full" />
+            </div>
+            
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Login</button>
+            </form>
+            </div>
+            </div>
   </body>
 </html>
 
@@ -131,4 +155,24 @@
             </g>
         </svg>
     </button>
+</div> -->
+
+<!-- <div class="btn1 ">
+    <button><svg  fill="#00000" width="34px" height="34px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" d="M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M17.9842695,7.39078625 C18.1985588,6.64477525 17.4973604,5.9435768 16.7513494,6.1578661 L16.6494246,6.19284365 L9.57835679,9.02127078 L9.47282273,9.07079854 C9.30957453,9.15937167 9.17428758,9.29167162 9.08209683,9.45256344 L9.02127078,9.57835679 L6.19284365,16.6494246 L6.1578661,16.7513494 C5.9435768,17.4973604 6.64477525,18.1985588 7.39078625,17.9842695 L7.49271102,17.949292 L14.5637788,15.1208648 L14.6693129,15.0713371 C14.8325611,14.982764 14.967848,14.850464 15.0600388,14.6895722 L15.1208648,14.5637788 L17.949292,7.49271102 L17.9842695,7.39078625 Z M12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 Z"></path> </g></svg></button>
+    <span>Explore</span>
+</div>
+<div class="btn3">
+   <button>
+    <svg viewBox="0 0 24 24"  width="34px" height="34px" fill="#00000"  xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.89 5.87988H5.10999C3.39999 5.87988 2 7.27987 2 8.98987V20.3499C2 21.7999 3.04 22.4199 4.31 21.7099L8.23999 19.5199C8.65999 19.2899 9.34 19.2899 9.75 19.5199L13.68 21.7099C14.95 22.4199 15.99 21.7999 15.99 20.3499V8.98987C16 7.27987 14.6 5.87988 12.89 5.87988Z" stroke="#b5b5b5" stroke-width="0.696" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 8.98987V20.3499C16 21.7999 14.96 22.4099 13.69 21.7099L9.76001 19.5199C9.34001 19.2899 8.65999 19.2899 8.23999 19.5199L4.31 21.7099C3.04 22.4099 2 21.7999 2 20.3499V8.98987C2 7.27987 3.39999 5.87988 5.10999 5.87988H12.89C14.6 5.87988 16 7.27987 16 8.98987Z" stroke="#b5b5b5" stroke-width="0.696" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M22 5.10999V16.47C22 17.92 20.96 18.53 19.69 17.83L16 15.77V8.98999C16 7.27999 14.6 5.88 12.89 5.88H8V5.10999C8 3.39999 9.39999 2 11.11 2H18.89C20.6 2 22 3.39999 22 5.10999Z" stroke="#b5b5b5" stroke-width="0.696" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    </button>
+    <span>Saved</span>
+</div>
+</div>
+<div class="setting *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5 ">
+<div class="btn">
+    <button class="text-white">
+        <svg class="text-white" viewBox="0 0 24 24" width="54px" height="54px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1395 12.0002C14.1395 13.1048 13.2664 14.0002 12.1895 14.0002C11.1125 14.0002 10.2395 13.1048 10.2395 12.0002C10.2395 10.8957 11.1125 10.0002 12.1895 10.0002C13.2664 10.0002 14.1395 10.8957 14.1395 12.0002Z" stroke="#7e7c7c" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.57381 18.1003L5.12169 12.8133C4.79277 12.2907 4.79277 11.6189 5.12169 11.0963L7.55821 5.89229C7.93118 5.32445 8.55898 4.98876 9.22644 5.00029H12.1895H15.1525C15.8199 4.98876 16.4477 5.32445 16.8207 5.89229L19.2524 11.0923C19.5813 11.6149 19.5813 12.2867 19.2524 12.8093L16.8051 18.1003C16.4324 18.674 15.8002 19.0133 15.1281 19.0003H9.24984C8.5781 19.013 7.94636 18.6737 7.57381 18.1003Z" stroke="#7e7c7c" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    </button>
+    <span>Settings</span>
+    
 </div> -->
