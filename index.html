@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body class="h-100% bg-gray-100  text-gray-900 ">
+<body class="h-100% bg-gray-100 overflow-x-hidden text-gray-900 ">
   <div class="main-pageh-100%"> <!-- nav start here! -->
-    <nav class="h-[140px] w-full sticky top-0 p-4 z-10 md:p-6  md:h-[98px] bg-white  shadow-md">
+    <nav class="h-[140px] w-full md:w-full sticky top-0 p-4 z-10 md:p-6  md:h-[98px] bg-white  shadow-md">
       <!-- logo start here! -->
       <div class="logo mx-auto flex flex-wrap items-center justify-between">
         <div class="w-1/2 md:w-1/4 lg:w-1/5 text-left">
@@ -34,19 +34,19 @@
         </div>
         <!-- Login and Register button starts here! -->
         <div class="w-1/2 order-2 md:order-last md:w-1/4 lg:w-1/5 flex justify-end items-center space-x-4">
-          <button
+          <a href="/login.html"><button
             class="px-4 py-2 border rounded-full font-medium text-gray-700  hover:bg-gray-200  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500  transition-all duration-300 text-[16px]">
-            Log&nbsp;in </button>
-          <button
+            Log&nbsp;in </button></a>
+          <a href="/register.html"><button
             class="px-4 py-2 rounded-full font-medium text-white bg-gray-800  hover:bg-gray-900  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500  transition-all duration-300 text-[16px]">
-            Register </button>
+            Register </button></a>
         </div>
       </div>
     </nav>
 
 
     <!-- main starts hear -->
-    <div class="hero w-full h-[200vh]  border-t">
+    <div class="hero w-full h-[200vh]  border-t ">
       <aside class="h-[calc(100vh-140px)] sticky top-[140px] md:h-[calc(100vh-98px)] md:top-[98px] w-1/6 bg-white z-0 md:w-[100px] flex justify-between flex-col items-center shadow-md border-r">
         <!-- explore serch save and uplode icon button -->
         <div class="container-1 group flex flex-col w-full items-center *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5 *:text-[14px]  ">
@@ -141,17 +141,23 @@
         </div>
       </aside>
       <!-- Gallery page -->
-       <div class="page absolute left-[20%] md:left-[100px] top-[140px] w-full h-[calc(100vh-140px)] md:h-[calc(100vh-98px)]">
-          <div class="heding">
-            <h2>trending</h2>
+       <div class="page w-[calc(100vw-1/6)] absolute left-[20%] md:left-[100px] top-[140px] md:top-[98px] md:w-[100vw-100px] h-[calc(100vh-140px)] md:h-[calc(100vh-98px)]">
+         <div class="options md:pl-2">
+           <div class="btns *:border flex mt-2 group gap-1 *:hover:bg-wight *:rounded-full *:cursor-pointer *:w-[80px] *:flex *:justify-center " >
+             <button class="btn bg-white border focus:bg-black focus:text-white  " name="all" ">All</button>
+             <button class="btn bg-white border focus:bg-black focus:text-white " name="car" ">car</button>
+             <button class="btn bg-white border focus:bg-black focus:text-white " name="india" ">IndIa</button>
+              <button class="btn bg-white border focus:bg-black focus:text-white " name="dogs" ">dogs</button>
+           </div>
+         </div>
+          <div class="heding mt-4">
+            <h1 class="mt-4 text-2xl font-bold pl-2 md:pl-2">All Trending Images</h1>
           </div>
-          <div class="options">
+        </div>
 
-          </div>
-          <div class="imge-cards">
-
-          </div>
-       </div>
+          
+          
+         
 
     </div>
   </div>
@@ -177,58 +183,9 @@
 
 
   <!-- Register page -->
-  <div class="register-page mx-auto  items-center justify-center h-screen absolute top-0  w-[100vw] hidden">
-    <div class="w-96 bg-white p-6 rounded-lg shadow-md">
-      <h1 class="text-2xl font-bold mb-4">Register</h1>
-
-      <form>
-        <div class="mb-4">
-          <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
-          <input type="email" id="email" name="email" class="border border-gray-400 p-2 rounded w-full" />
-        </div>
-
-        <div class="mb-4">
-          <label for="username" class="block text-gray-700 font-bold mb-2">Username:</label>
-          <input type="text" id="username" name="username" class="border border-gray-400 p-2 rounded w-full" />
-        </div>
-
-        <div class="mb-4">
-          <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
-          <input type="password" id="password" name="password" class="border border-gray-400 p-2 rounded w-full" />
-        </div>
-
-        <div class="mb-4">
-          <label for="confirm_password" class="block text-gray-700 font-bold mb-2">Confirm Password:</label>
-          <input type="password" id="confirm_password" name="confirm_password"
-            class="border border-gray-400 p-2 rounded w-full" />
-        </div>
-
-        <button type="submit"
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Register</button>
-      </form>
-    </div>
-  </div>
+ 
   <!-- Login page -->
-  <div class="login-page mx-auto  items-center justify-center h-screen absolute top-0 w-[100vw] hidden">
-    <div class="w-96 bg-white p-6 rounded-lg shadow-md">
-      <h1 class="text-2xl font-bold mb-4">Login</h1>
-
-      <form>
-        <div class="mb-4">
-          <label for="username" class="block text-gray-700 font-bold mb-2">Username:</label>
-          <input type="text" id="username" name="username" class="border border-gray-400 p-2 rounded w-full" />
-        </div>
-
-        <div class="mb-4">
-          <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
-          <input type="password" id="password" name="password" class="border border-gray-400 p-2 rounded w-full" />
-        </div>
-
-        <button type="submit"
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Login</button>
-      </form>
-    </div>
-  </div>
+ 
 </body>
 
 </html>
