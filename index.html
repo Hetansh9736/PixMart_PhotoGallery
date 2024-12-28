@@ -1,134 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PixMart-PhotoGallary</title>
-    <link rel="stylesheet" href="src/output.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body class=  " bg-gray-100  text-gray-900 ">
-   <div class="main-page"> <!-- nav start here! -->
-    <nav class="p-4 z-10 md:p-6 bg-white  shadow-md">
-        <!-- logo start here! -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixMart-PhotoGallary</title>
+  <link rel="stylesheet" href="src/output.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="h-100% bg-gray-100  text-gray-900 ">
+  <div class="main-pageh-100%"> <!-- nav start here! -->
+    <nav class="h-[140px] w-full sticky top-0 p-4 z-10 md:p-6  md:h-[98px] bg-white  shadow-md">
+      <!-- logo start here! -->
       <div class="logo mx-auto flex flex-wrap items-center justify-between">
         <div class="w-1/2 md:w-1/4 lg:w-1/5 text-left">
-          <a href="#" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 "> PixMart </a>
+          <a href="#"
+            class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-orange-400 ">
+            PixMart </a>
         </div>
         <!-- Search start here! -->
         <div class="w-full order-last md:order-2 md:w-1/2 lg:w-2/5 mt-4 md:mt-0">
-          <div class="h-[50px] pr-1 flex items-center rounded-full border border-gray-300  bg-gray-100  focus-within:ring-2 focus-within:ring-orange-500 dark:focus-within:ring-orange-400 transition-all duration-300" >
-           <input 
-              class="text-sm bg-transparent w-full ml-4 h-8 outline-none"
-              type="text"
+          <div
+            class="h-[50px] pr-1 flex items-center rounded-full border border-gray-300  bg-gray-100  focus-within:ring-2 focus-within:ring-orange-500 dark:focus-within:ring-orange-400 transition-all duration-300">
+            <input class="text-sm bg-transparent w-full ml-4 h-8 outline-none" type="text"
               placeholder="Search for high-quality photos..."
               class="w-full px-4 py-2 rounded-full focus:outline-none bg-transparent text-gray-700 dark:text-gray-300">
-            <button class="bg-orange-500 hover:bg-orange-600  text-white font-semibold px-4 py-2 rounded-full transition-all duration-300"> Search </button>
+            <button
+              class="bg-orange-500 hover:bg-orange-600  text-white font-semibold px-4 py-2 rounded-full transition-all duration-300">
+              Search </button>
           </div>
         </div>
-      <!-- Login and Register button starts here! -->
+        <!-- Login and Register button starts here! -->
         <div class="w-1/2 order-2 md:order-last md:w-1/4 lg:w-1/5 flex justify-end items-center space-x-4">
-          <button class="px-4 py-2 border rounded-full font-medium text-gray-700  hover:bg-gray-200  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500  transition-all duration-300 text-[16px]">
+          <button
+            class="px-4 py-2 border rounded-full font-medium text-gray-700  hover:bg-gray-200  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500  transition-all duration-300 text-[16px]">
             Log&nbsp;in </button>
-          <button class="px-4 py-2 rounded-full font-medium text-white bg-gray-800  hover:bg-gray-900  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500  transition-all duration-300 text-[16px]"> Register </button>
+          <button
+            class="px-4 py-2 rounded-full font-medium text-white bg-gray-800  hover:bg-gray-900  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500  transition-all duration-300 text-[16px]">
+            Register </button>
         </div>
       </div>
     </nav>
-    
+
 
     <!-- main starts hear -->
-    <div class="hero w-full h-[100vh]  border-t">
-        <aside class="h-full w-1/6 bg-white z-0 md:w-[100px] flex justify-between flex-col items-center shadow-md border-r">
-            <div class="container-1 flex flex-col w-full items-center *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5 *:text-[14px]  ">
-               <div class="explore">
-                <button>
-                    <svg class="" fill="#000000" width="34px" height="34px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" d="M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M17.9842695,7.39078625 C18.1985588,6.64477525 17.4973604,5.9435768 16.7513494,6.1578661 L16.6494246,6.19284365 L9.57835679,9.02127078 L9.47282273,9.07079854 C9.30957453,9.15937167 9.17428758,9.29167162 9.08209683,9.45256344 L9.02127078,9.57835679 L6.19284365,16.6494246 L6.1578661,16.7513494 C5.9435768,17.4973604 6.64477525,18.1985588 7.39078625,17.9842695 L7.49271102,17.949292 L14.5637788,15.1208648 L14.6693129,15.0713371 C14.8325611,14.982764 14.967848,14.850464 15.0600388,14.6895722 L15.1208648,14.5637788 L17.949292,7.49271102 L17.9842695,7.39078625 Z M12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 Z"></path> </g></svg>
-                </button>
-                <span class="">Explore</span>
-               </div>
-               <div class="search">
-                <button>
-                    <svg class="" width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier"  stroke="currentColor" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 17c1.71 0 3.287-.573 4.55-1.537l4.743 4.744a1 1 0 0 0 1.414-1.414l-4.744-4.744A7.5 7.5 0 1 0 9.5 17zM15 9.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" fill="#000000"></path></g></svg>
-                </button>
-                <span>Search</span>
-               </div>
-               <div class="save">
-              <button>
-                <svg class="" width="44px" height="44px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 6L7.5 5.25H16.5L17.25 6V19.3162L12 16.2051L6.75 19.3162V6ZM8.25 6.75V16.6838L12 14.4615L15.75 16.6838V6.75H8.25Z" fill="#000000"></path> </g></svg>
-              </button>
-                <span>Saved</span>
-               </div>
-               <div class="upload">
-                <button>
-                    <svg class=" width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.0344 14.0062C13.0361 14.5585 12.5898 15.0076 12.0375 15.0093C11.4853 15.0111 11.0361 14.5647 11.0344 14.0125L13.0344 14.0062Z" fill="#000000"></path> <path d="M9.71867 6.72364L11.0075 5.42672L11.0344 14.0125L13.0344 14.0062L13.0075 5.42045L14.3044 6.70926C14.6961 7.09856 15.3293 7.09659 15.7186 6.70484C16.1079 6.3131 16.1059 5.67993 15.7142 5.29064L11.9955 1.59518L8.30003 5.31387L9.71867 6.72364Z" fill="#000000"></path> <path d="M8.30003 5.31387C7.91073 5.70562 7.9127 6.3388 8.30445 6.7281C8.69619 7.1174 9.32938 7.11539 9.71867 6.72364L8.30003 5.31387Z" fill="#000000"></path> <path d="M4 12C4 10.8954 4.89543 10 6 10C6.55228 10 7 9.55229 7 9C7 8.44772 6.55228 8 6 8C3.79086 8 2 9.79086 2 12V18C2 20.2091 3.79086 22 6 22H17C19.7614 22 22 19.7614 22 17V12C22 9.79086 20.2091 8 18 8C17.4477 8 17 8.44772 17 9C17 9.55229 17.4477 10 18 10C19.1046 10 20 10.8954 20 12V17C20 18.6569 18.6569 20 17 20H6C4.89543 20 4 19.1046 4 18V12Z" fill="#000000"></path> </g></svg>
-                </button>
-                <span>Upload</span>
-               </div>
-            </div>
-            <div class="container-2 flex flex-col w-full items-center *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5 *:text-[14px]">
-                <div class="setting">
-                    <button>
-                        <svg class="" width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.08168 13.9445C2.55298 12.9941 2.28862 12.5188 2.28862 12C2.28862 11.4812 2.55298 11.0059 3.08169 10.0555L4.43094 7.63L5.85685 5.24876C6.4156 4.31567 6.69498 3.84912 7.14431 3.5897C7.59364 3.33028 8.13737 3.3216 9.22483 3.30426L12 3.26L14.7752 3.30426C15.8626 3.3216 16.4064 3.33028 16.8557 3.5897C17.305 3.84912 17.5844 4.31567 18.1431 5.24876L19.5691 7.63L20.9183 10.0555C21.447 11.0059 21.7114 11.4812 21.7114 12C21.7114 12.5188 21.447 12.9941 20.9183 13.9445L19.5691 16.37L18.1431 18.7512C17.5844 19.6843 17.305 20.1509 16.8557 20.4103C16.4064 20.6697 15.8626 20.6784 14.7752 20.6957L12 20.74L9.22483 20.6957C8.13737 20.6784 7.59364 20.6697 7.14431 20.4103C6.69498 20.1509 6.4156 19.6843 5.85685 18.7512L4.43094 16.37L3.08168 13.9445Z" stroke="#000000" stroke-width="2"></path> <circle cx="12" cy="12" r="3" stroke="#000000" stroke-width="2"></circle> </g></svg>
-                    </button>
-                    <span>Settings</span>
-                </div>
-            </div>
-        </aside>
+    <div class="hero w-full h-[200vh]  border-t">
+      <aside class="h-[calc(100vh-140px)] sticky top-[140px] md:h-[calc(100vh-98px)] md:top-[98px] w-1/6 bg-white z-0 md:w-[100px] flex justify-between flex-col items-center shadow-md border-r">
+        <!-- explore serch save and uplode icon button -->
+        <div class="container-1 group flex flex-col w-full items-center *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5 *:text-[14px]  ">
+          <div class="explore">
+            <button class="group  flex flex-col items-center w-full">
+              <svg class=" " fill="#00000" width="34px" height="34px" viewBox="0 0 24.00 24.00"
+                xmlns="http://www.w3.org/2000/svg" stroke="#00000" stroke-width="0.00024000000000000003">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="group-focus:fill-orange-600" fill-rule="evenodd"
+                    d="M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M17.9842695,7.39078625 C18.1985588,6.64477525 17.4973604,5.9435768 16.7513494,6.1578661 L16.6494246,6.19284365 L9.57835679,9.02127078 L9.47282273,9.07079854 C9.30957453,9.15937167 9.17428758,9.29167162 9.08209683,9.45256344 L9.02127078,9.57835679 L6.19284365,16.6494246 L6.1578661,16.7513494 C5.9435768,17.4973604 6.64477525,18.1985588 7.39078625,17.9842695 L7.49271102,17.949292 L14.5637788,15.1208648 L14.6693129,15.0713371 C14.8325611,14.982764 14.967848,14.850464 15.0600388,14.6895722 L15.1208648,14.5637788 L17.949292,7.49271102 L17.9842695,7.39078625 Z M12,10 C13.1045695,10 14,10.8954305 14,12 C14,13.1045695 13.1045695,14 12,14 C10.8954305,14 10,13.1045695 10,12 C10,10.8954305 10.8954305,10 12,10 Z">
+                  </path>
+                </g>
+              </svg>
+              <span class="group-focus:text-orange-600">Explore</span>
+            </button>
+          </div>
+          <div class="search">
+            <button class="group  flex flex-col items-center w-full">
+              <svg class="*:fill-orange-700" width="34px" height="34px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke="#00000" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="group-focus:fill-orange-600" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.5 17c1.71 0 3.287-.573 4.55-1.537l4.743 4.744a1 1 0 0 0 1.414-1.414l-4.744-4.744A7.5 7.5 0 1 0 9.5 17zM15 9.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    fill="#000000"></path>
+                </g>
+              </svg>
+              <span class="group-focus:text-orange-600">Search</span>
+            </button>
+          </div>
+          <div class="save ">
+            <button class="group  flex flex-col items-center w-full">
+              <svg class="" width="44px" height="44px" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="group-focus:fill-orange-600" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.75 6L7.5 5.25H16.5L17.25 6V19.3162L12 16.2051L6.75 19.3162V6ZM8.25 6.75V16.6838L12 14.4615L15.75 16.6838V6.75H8.25Z"
+                    fill="#000000"></path>
+                </g>
+              </svg>
+              <span class="group-focus:text-orange-600">Saved</span>
+            </button>
+          </div>
+          <div class="upload">
+            <button class="group  flex flex-col items-center w-full">
+              <svg class=""  width="34px" height="34px" viewBox="0 0 24 24" fill="#00000"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier"  stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path class="group-focus:fill-orange-600"
+                    d="M13.0344 14.0062C13.0361 14.5585 12.5898 15.0076 12.0375 15.0093C11.4853 15.0111 11.0361 14.5647 11.0344 14.0125L13.0344 14.0062Z"
+                    fill="#00000"></path>
+                  <path class="group-focus:fill-orange-600"
+                    d="M9.71867 6.72364L11.0075 5.42672L11.0344 14.0125L13.0344 14.0062L13.0075 5.42045L14.3044 6.70926C14.6961 7.09856 15.3293 7.09659 15.7186 6.70484C16.1079 6.3131 16.1059 5.67993 15.7142 5.29064L11.9955 1.59518L8.30003 5.31387L9.71867 6.72364Z"
+                    fill="#00000"></path>
+                  <path class="group-focus:fill-orange-600"
+                    d="M8.30003 5.31387C7.91073 5.70562 7.9127 6.3388 8.30445 6.7281C8.69619 7.1174 9.32938 7.11539 9.71867 6.72364L8.30003 5.31387Z"
+                    fill="#00000"></path>
+                  <path class="group-focus:fill-orange-600"
+                    d="M4 12C4 10.8954 4.89543 10 6 10C6.55228 10 7 9.55229 7 9C7 8.44772 6.55228 8 6 8C3.79086 8 2 9.79086 2 12V18C2 20.2091 3.79086 22 6 22H17C19.7614 22 22 19.7614 22 17V12C22 9.79086 20.2091 8 18 8C17.4477 8 17 8.44772 17 9C17 9.55229 17.4477 10 18 10C19.1046 10 20 10.8954 20 12V17C20 18.6569 18.6569 20 17 20H6C4.89543 20 4 19.1046 4 18V12Z"
+                    fill="#00000"></path>
+                </g>
+              </svg>
+              <span class="group-focus:text-orange-600">Upload</span>
+            </button>
+          </div>
+        </div>
+        <!-- setting button -->
+        <div class="container-2 flex flex-col w-full items-center *:flex *:flex-col *:w-full *:items-center *:gap-[5px] gap-[15px] pt-5 *:text-[14px]">
+          <div class="setting">
+            <button>
+              <svg class="" width="34px" height="34px" viewBox="0 0 24 24" fill="#ffffff"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M3.08168 13.9445C2.55298 12.9941 2.28862 12.5188 2.28862 12C2.28862 11.4812 2.55298 11.0059 3.08169 10.0555L4.43094 7.63L5.85685 5.24876C6.4156 4.31567 6.69498 3.84912 7.14431 3.5897C7.59364 3.33028 8.13737 3.3216 9.22483 3.30426L12 3.26L14.7752 3.30426C15.8626 3.3216 16.4064 3.33028 16.8557 3.5897C17.305 3.84912 17.5844 4.31567 18.1431 5.24876L19.5691 7.63L20.9183 10.0555C21.447 11.0059 21.7114 11.4812 21.7114 12C21.7114 12.5188 21.447 12.9941 20.9183 13.9445L19.5691 16.37L18.1431 18.7512C17.5844 19.6843 17.305 20.1509 16.8557 20.4103C16.4064 20.6697 15.8626 20.6784 14.7752 20.6957L12 20.74L9.22483 20.6957C8.13737 20.6784 7.59364 20.6697 7.14431 20.4103C6.69498 20.1509 6.4156 19.6843 5.85685 18.7512L4.43094 16.37L3.08168 13.9445Z"
+                    stroke="#000000" stroke-width="2"></path>
+                  <circle cx="12" cy="12" r="3" stroke="#000000" stroke-width="2"></circle>
+                </g>
+              </svg>
+            </button>
+            <span>Settings</span>
+          </div>
+        </div>
+      </aside>
+      <!-- Gallery page -->
+       <div class="page absolute left-[20%] md:left-[100px] top-[140px] w-full h-[calc(100vh-140px)] md:h-[calc(100vh-98px)]">
+          <div class="heding">
+            <h2>trending</h2>
+          </div>
+          <div class="options">
 
-    </div></div>
-    <!-- Register page -->
-    <div class="register-page mx-auto  items-center justify-center h-screen absolute top-0  w-[100vw] hidden">
-        <div class="w-96 bg-white p-6 rounded-lg shadow-md">
-        <h1 class="text-2xl font-bold mb-4">Register</h1>
-        
-        <form>
+          </div>
+          <div class="imge-cards">
+
+          </div>
+       </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Register page -->
+  <div class="register-page mx-auto  items-center justify-center h-screen absolute top-0  w-[100vw] hidden">
+    <div class="w-96 bg-white p-6 rounded-lg shadow-md">
+      <h1 class="text-2xl font-bold mb-4">Register</h1>
+
+      <form>
         <div class="mb-4">
-        <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
-        <input type="email" id="email" name="email" class="border border-gray-400 p-2 rounded w-full" />
+          <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+          <input type="email" id="email" name="email" class="border border-gray-400 p-2 rounded w-full" />
         </div>
-        
+
         <div class="mb-4">
-        <label for="username" class="block text-gray-700 font-bold mb-2">Username:</label>
-        <input type="text" id="username" name="username" class="border border-gray-400 p-2 rounded w-full" />
+          <label for="username" class="block text-gray-700 font-bold mb-2">Username:</label>
+          <input type="text" id="username" name="username" class="border border-gray-400 p-2 rounded w-full" />
         </div>
-        
+
         <div class="mb-4">
-        <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
-        <input type="password" id="password" name="password" class="border border-gray-400 p-2 rounded w-full" />
+          <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
+          <input type="password" id="password" name="password" class="border border-gray-400 p-2 rounded w-full" />
         </div>
-        
+
         <div class="mb-4">
-        <label for="confirm_password" class="block text-gray-700 font-bold mb-2">Confirm Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password" class="border border-gray-400 p-2 rounded w-full" />
+          <label for="confirm_password" class="block text-gray-700 font-bold mb-2">Confirm Password:</label>
+          <input type="password" id="confirm_password" name="confirm_password"
+            class="border border-gray-400 p-2 rounded w-full" />
         </div>
-        
-        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Register</button>
-        </form>
+
+        <button type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Register</button>
+      </form>
+    </div>
+  </div>
+  <!-- Login page -->
+  <div class="login-page mx-auto  items-center justify-center h-screen absolute top-0 w-[100vw] hidden">
+    <div class="w-96 bg-white p-6 rounded-lg shadow-md">
+      <h1 class="text-2xl font-bold mb-4">Login</h1>
+
+      <form>
+        <div class="mb-4">
+          <label for="username" class="block text-gray-700 font-bold mb-2">Username:</label>
+          <input type="text" id="username" name="username" class="border border-gray-400 p-2 rounded w-full" />
         </div>
+
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
+          <input type="password" id="password" name="password" class="border border-gray-400 p-2 rounded w-full" />
         </div>
-        <!-- Login page -->
-        <div class="login-page mx-auto  items-center justify-center h-screen absolute top-0 w-[100vw] hidden">
-            <div class="w-96 bg-white p-6 rounded-lg shadow-md">
-            <h1 class="text-2xl font-bold mb-4">Login</h1>
-            
-            <form>
-            <div class="mb-4">
-            <label for="username" class="block text-gray-700 font-bold mb-2">Username:</label>
-            <input type="text" id="username" name="username" class="border border-gray-400 p-2 rounded w-full" />
-            </div>
-            
-            <div class="mb-4">
-            <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
-            <input type="password" id="password" name="password" class="border border-gray-400 p-2 rounded w-full" />
-            </div>
-            
-            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Login</button>
-            </form>
-            </div>
-            </div>
-  </body>
+
+        <button type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+
 </html>
 
 <!-- <div class="theme w-[10%] flex justify-center items-center">
