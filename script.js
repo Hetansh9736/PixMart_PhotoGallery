@@ -1,5 +1,6 @@
-async function fetchImages(query) {
-    let page = 1;
+let currentPage = 1; 
+
+async function fetchImages(query, page = 1) {
     const accessKey = 'nvYhsZpv73hd4jjKdLPJjU8-W_iu7BEuXT17IMTbm9I';
     const perPage = 30;
     const url = `https://api.unsplash.com/search/photos?query=${query}&page=${page}&per_page=${perPage}&client_id=${accessKey}`;
@@ -12,14 +13,12 @@ async function fetchImages(query) {
     }
 }
 
-async function display(c, page = 1) {
-    const display = await fetchImages(c, page);
+async function display(query, page = 1) {
+    const display = await fetchImages(query, page);
+    console.log(display);
     display.results.forEach((element) => {
         let container = document.querySelector('.images');
         let card = document.createElement('div');
-        let hover_btns = document.createElement('div');
-        let like = document.createElement('button');
-        let download = document.createElement('button');
         let image = document.createElement('img');
         image.src = element.urls.regular;
         card.appendChild(image);
@@ -31,8 +30,8 @@ function search() {
     let container = document.querySelector('.images');
     container.innerHTML = '';
     let search = document.querySelector('#search');
-    display(search.value);
-    let btns = document.getElementsByClassName("btns");
+    currentPage = 1; 
+    display(search.value, currentPage);
     let heading = document.querySelector('#heading');
     heading.innerHTML = search.value.toUpperCase();
     search.value = "";
@@ -41,7 +40,7 @@ function search() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    display('random');
+    display('random', currentPage);
     let search_press = document.querySelector('#search');
     search_press.addEventListener("keydown", function (e) {
         if (e.key === 'Enter') {
@@ -49,42 +48,36 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
         }
     });
+
     let btns = document.getElementsByClassName("btn");
     Array.from(btns).forEach((element) => {
-        element.classList.add("!bg-white")
-        element.classList.add("!text-black")
+        element.classList.add("!bg-white");
+        element.classList.add("!text-black");
         element.addEventListener("click", function () {
             let btns = document.getElementsByClassName("btn");
             Array.from(btns).forEach(function (e) {
-                e.classList.add("!bg-white")
-                e.classList.add("!text-black")
+                e.classList.add("!bg-white");
+                e.classList.add("!text-black");
             });
-            element.classList.remove("!text-black")
-            element.classList.remove("!bg-white")
-            element.classList.add("bg-black")
-            element.classList.add("text-white")
+            element.classList.remove("!text-black");
+            element.classList.remove("!bg-white");
+            element.classList.add("bg-black");
+            element.classList.add("text-white");
         });
         element.addEventListener("click", function () {
             let container = document.querySelector('.images');
             container.innerHTML = "";
-            display(`${element.innerHTML}`);
+            display(`${element.innerHTML}`, currentPage);
             let heading = document.querySelector('#heading');
             heading.innerHTML = element.innerHTML.toUpperCase();
         });
     });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
     let explore = document.querySelector('#explore');
-    let i  = 0;
     explore.addEventListener("click", function () {
-        i++;
-        if (i == 330){
-            i  = 0;
-        }
-        else{
-            display('travel', i);
-        }
+        currentPage++;
+        if (currentPage > 10) currentPage = 1; 
+        display('travel', currentPage);
         let container = document.querySelector('.images');
         container.innerHTML = "";
         let heading = document.querySelector('#heading');
@@ -92,12 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let options = document.querySelector('#options');
         options.classList.remove('hidden');
     });
-});
 
-document.addEventListener("DOMContentLoaded", ()=>{
-    let showmore =  document.querySelector("#show-more");
-    showmore.addEventListener("click", ()=>{
-        fetchImages();
-        display(c, page++)
-    })
-})
+    let showmore = document.querySelector("#show-more");
+    showmore.addEventListener("click", () => {
+        currentPage++; 
+        let searchQuery = document.querySelector('#search').value || 'random'; 
+        display(searchQuery, currentPage); 
+    });
+});
