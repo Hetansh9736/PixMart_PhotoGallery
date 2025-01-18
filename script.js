@@ -1,5 +1,5 @@
-
-async function fetchImages(query, page = 1) {
+async function fetchImages(query) {
+    let page = 1;
     const accessKey = 'nvYhsZpv73hd4jjKdLPJjU8-W_iu7BEuXT17IMTbm9I';
     const perPage = 30;
     const url = `https://api.unsplash.com/search/photos?query=${query}&page=${page}&per_page=${perPage}&client_id=${accessKey}`;
@@ -13,9 +13,7 @@ async function fetchImages(query, page = 1) {
 }
 
 async function display(c, page = 1) {
-
     const display = await fetchImages(c, page);
- console.log(display);
     display.results.forEach((element) => {
         let container = document.querySelector('.images');
         let card = document.createElement('div');
@@ -26,7 +24,6 @@ async function display(c, page = 1) {
         image.src = element.urls.regular;
         card.appendChild(image);
         container.appendChild(card);
-      
     });
 }
 
@@ -43,26 +40,22 @@ function search() {
     options.classList.add('hidden');
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
     display('random');
     let search_press = document.querySelector('#search');
     search_press.addEventListener("keydown", function (e) {
-
         if (e.key === 'Enter') {
             search();
             e.preventDefault();
         }
     });
-    let btns = document.getElementsByClassName("btn")
-
+    let btns = document.getElementsByClassName("btn");
     Array.from(btns).forEach((element) => {
         element.classList.add("!bg-white")
         element.classList.add("!text-black")
         element.addEventListener("click", function () {
-            let btns = document.getElementsByClassName("btn")
+            let btns = document.getElementsByClassName("btn");
             Array.from(btns).forEach(function (e) {
-
                 e.classList.add("!bg-white")
                 e.classList.add("!text-black")
             });
@@ -78,9 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let heading = document.querySelector('#heading');
             heading.innerHTML = element.innerHTML.toUpperCase();
         });
-
     });
-
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -103,4 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
+document.addEventListener("DOMContentLoaded", ()=>{
+    let showmore =  document.querySelector("#show-more");
+    showmore.addEventListener("click", ()=>{
+        fetchImages();
+        display(c, page++)
+    })
+})
